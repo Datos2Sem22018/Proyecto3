@@ -8,7 +8,7 @@ int run(int argc, char *argv[])
     NodeCotroller w;
     w.show();
 
-    mariano
+
 
     return a.exec();
 }
@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 {
 
     std::thread t1 (run, argc, argv);
+
+    NodeCotroller::startServer();
 
     t1.join();
 

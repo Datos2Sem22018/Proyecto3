@@ -27,13 +27,17 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         nodecotroller.cpp \
-    serversocket.cpp
+    serversocket.cpp \
+    video.cpp \
+    nodedisk.cpp
 
 HEADERS += \
         nodecotroller.h \
     linkedlist.h \
     node.h \
-    serversocket.h
+    serversocket.h \
+    video.h \
+    nodedisk.h
 
 FORMS += \
         nodecotroller.ui
