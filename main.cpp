@@ -8,6 +8,8 @@ int run(int argc, char *argv[])
     NodeCotroller w;
     w.show();
 
+    mariano
+
     return a.exec();
 }
 
