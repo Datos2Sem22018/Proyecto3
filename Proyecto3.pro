@@ -29,7 +29,8 @@ SOURCES += \
         nodecotroller.cpp \
     serversocket.cpp \
     video.cpp \
-    nodedisk.cpp
+    nodedisk.cpp \
+    clientsocket.cpp
 
 HEADERS += \
         nodecotroller.h \
@@ -37,7 +38,8 @@ HEADERS += \
     node.h \
     serversocket.h \
     video.h \
-    nodedisk.h
+    nodedisk.h \
+    clientsocket.h
 
 FORMS += \
         nodecotroller.ui
