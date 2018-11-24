@@ -1,13 +1,21 @@
 #include "nodecotroller.h"
 #include "ui_nodecotroller.h"
+#include <iostream>
 
 #include "serversocket.h"
+
+bool flag = true;
+ServerSocket tcp;
 
 NodeCotroller::NodeCotroller(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::NodeCotroller)
 {
     ui->setupUi(this);
+    connect(ui->btn_FinishS, &QPushButton::clicked, this, NodeCotroller::closeServer);
+
+
+
 }
 
 NodeCotroller::~NodeCotroller()
@@ -15,11 +23,11 @@ NodeCotroller::~NodeCotroller()
     delete ui;
 }
 
-ServerSocket tcp;
+
 void * NodeCotroller::loop(void * m)
 {
     pthread_detach(pthread_self());
-    while(1)
+    while(flag)
     {
         srand(time(NULL));
         char ch = 'a' + rand() % 26;
@@ -27,6 +35,7 @@ void * NodeCotroller::loop(void * m)
         string str = tcp.getMessage();
         if( str != "" )
         {
+
             cout << "Message:" << str << endl;
             tcp.Send(" [client message: "+str+"] "+s);
             tcp.clean();
@@ -45,4 +54,15 @@ void NodeCotroller::startServer(){
         tcp.receive();
 
     }
+}
+
+
+void writeMessenge(string str){
+
+}
+
+void NodeCotroller::closeServer(){
+    tcp.detach();
+    flag = false;
+
 }

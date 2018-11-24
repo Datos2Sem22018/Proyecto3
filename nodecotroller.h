@@ -17,8 +17,8 @@ public:
     explicit NodeCotroller(QWidget *parent = nullptr);
     ~NodeCotroller();
     static int startNodeController(int argc, char** argv);
-    LinkedList<Video> searchMetadata(std::string search);
     static void startServer();
+    static void closeServer();
     static void * loop(void * m);
 
 

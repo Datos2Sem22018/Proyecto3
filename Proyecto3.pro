@@ -30,7 +30,8 @@ SOURCES += \
     serversocket.cpp \
     video.cpp \
     nodedisk.cpp \
-    clientsocket.cpp
+    clientsocket.cpp \
+    raid5.cpp
 
 HEADERS += \
         nodecotroller.h \
@@ -39,7 +40,8 @@ HEADERS += \
     serversocket.h \
     video.h \
     nodedisk.h \
-    clientsocket.h
+    clientsocket.h \
+    raid5.h
 
 FORMS += \
         nodecotroller.ui
