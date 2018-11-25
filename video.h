@@ -8,7 +8,7 @@ class Video
 {
 
 private:
-
+    std::string duration;
     std::string name;
     std::string contributor;
     std::string path;

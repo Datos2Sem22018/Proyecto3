@@ -31,7 +31,8 @@ SOURCES += \
     video.cpp \
     nodedisk.cpp \
     clientsocket.cpp \
-    raid5.cpp
+    raid5.cpp \
+    filemanagement.cpp
 
 HEADERS += \
         nodecotroller.h \
@@ -41,7 +42,8 @@ HEADERS += \
     video.h \
     nodedisk.h \
     clientsocket.h \
-    raid5.h
+    raid5.h \
+    filemanagement.h
 
 FORMS += \
         nodecotroller.ui
