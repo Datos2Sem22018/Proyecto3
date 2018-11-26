@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
+    <width>431</width>
     <height>568</height>
    </rect>
   </property>
@@ -228,6 +228,9 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QLineEdit" name="connect"/>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -235,7 +238,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>435</width>
+     <width>431</width>
      <height>22</height>
     </rect>
    </property>

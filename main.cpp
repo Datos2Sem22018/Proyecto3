@@ -1,6 +1,7 @@
 #include "nodecotroller.h"
 #include <QApplication>
 #include <thread>
+#include "serverjson.h"
 
 int run(int argc, char *argv[])
 {
@@ -12,11 +13,10 @@ int run(int argc, char *argv[])
 
 int main(int argc, char *argv[])
 {
-    std::thread t1 (run, argc, argv);
-    NodeCotroller::startServer();
-    t1.join();
+    serverjson Server;
+    Server.startServer();
 
-    //run(argc, argv);
+    run(argc, argv);
     QString qstr;
     std::string str = qstr.toStdString();
     std::string hola;

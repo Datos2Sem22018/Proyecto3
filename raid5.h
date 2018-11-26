@@ -12,9 +12,10 @@ public:
 
 
     LinkedList<Video> searchMetada(std::string search);
-    std::string
+
 
 private:
+
     LinkedList<NodeDisk> DiskList;
     LinkedList<Video> listVideo;
 };

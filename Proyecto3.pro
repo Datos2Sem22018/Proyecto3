@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,23 +27,21 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         nodecotroller.cpp \
-    serversocket.cpp \
     video.cpp \
     nodedisk.cpp \
-    clientsocket.cpp \
     raid5.cpp \
-    filemanagement.cpp
+    filemanagement.cpp \
+    serverjson.cpp
 
 HEADERS += \
         nodecotroller.h \
     linkedlist.h \
     node.h \
-    serversocket.h \
     video.h \
     nodedisk.h \
-    clientsocket.h \
     raid5.h \
-    filemanagement.h
+    filemanagement.h \
+    serverjson.h
 
 FORMS += \
         nodecotroller.ui
