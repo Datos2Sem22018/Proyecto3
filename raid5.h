@@ -3,14 +3,20 @@
 
 #include "linkedlist.h"
 #include "nodedisk.h"
+#include "video.h"
 
 class Raid5
 {
 public:
     Raid5();
 
+
+    LinkedList<Video> searchMetada(std::string search);
+    std::string
+
 private:
     LinkedList<NodeDisk> DiskList;
+    LinkedList<Video> listVideo;
 };
 
 #endif // RAID5_H
