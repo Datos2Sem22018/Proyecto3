@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 {
     serverjson Server;
     Server.startServer();
-
     run(argc, argv);
     QString qstr;
     std::string str = qstr.toStdString();
