@@ -53,7 +53,7 @@ bool ClientSocket::Send(string data) {
     return true;
 }
 
-string ClientSocket::receive(int size) {
+string ClientSocket::receive(int size){
     char buffer[size];
     memset(&buffer[0], 0, sizeof(buffer));
     string reply;
